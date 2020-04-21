@@ -13,6 +13,16 @@
 
     <!-- Load Font Awesome 5 (free) icons -->
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+     <script src="https://d3js.org/d3.v5.min.js"></script>
+     <script src="https://d3js.org/d3-path.v1.min.js"></script>
+     <script src="https://d3js.org/d3-shape.v1.min.js"></script>
+     <!-- load the d3.js library -->
+     <script src="//d3js.org/d3.v5.min.js"></script>
+
+     <script src="nodelink.js"></script>
+     
+
   </head>
 
   <body>
@@ -206,13 +216,7 @@ You can even put code into these pre blocks.
         <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.2.1"></script>
 
         <div id="vis"></div>
-
-        <script type="text/javascript">
-        var spec = "https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.json";
-        vegaEmbed('#vis', spec).then(function(result) {
-          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-        }).catch(console.error);
-        </script>
+        <svg id = "nodelink"></svg>
 
         <h4>Instructions</h4>
 
